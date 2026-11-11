@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zonia | Sign In</title>
+<style>
+*{box-sizing:border-box}
+body{
+margin:0;min-height:100vh;display:flex;align-items:center;
+justify-content:center;padding:20px;
+background:radial-gradient(circle at top,#33250a,#080808 65%);
+font-family:Arial,sans-serif;color:white
+}
+.card{
+width:100%;max-width:390px;padding:38px 27px;
+background:#111;border:1px solid #c9a443;
+border-radius:22px;text-align:center;
+box-shadow:0 0 35px #c9a44335
+}
+.logo{font-size:39px;color:#e7c45d;font-weight:bold;letter-spacing:5px}
+h2{color:#e7c45d;margin-bottom:8px}
+p{color:#aaa;font-size:14px}
+input{
+width:100%;padding:15px;margin:12px 0;
+border:1px solid #8d702b;border-radius:10px;
+background:#080808;color:white;font-size:15px;outline:none
+}
+input:focus{border-color:#f3d16a}
+button{
+width:100%;padding:15px;margin-top:15px;
+border:0;border-radius:10px;
+background:linear-gradient(90deg,#98701c,#f5d778,#98701c);
+color:#080808;font-weight:bold;font-size:16px;
+cursor:pointer
+}
+a{color:#e7c45d;text-decoration:none}
+.small{margin-top:25px;font-size:12px;color:#777}
+</style>
+</head>
+<body>
+<div class="card">
+<div class="logo">ZONIA</div>
+<p>WELCOME TO ZONIA ONLINE SERVICES</p>
+<h2>Sign In</h2>
+<p>Welcome back! Enter your details.</p>
+<form id="login">
+<input type="email" placeholder="Enter your email" required>
+<input type="password" placeholder="Enter your password" required>
+<button type="submit">SIGN IN ✨</button>
+</form>
+<p><a href="index.html">← Back to Home</a></p>
+<div class="small">© 2026 ZONIA | All Rights Reserved</div>
+</div>
+<script>
+document.getElementById('login').addEventListener('submit',function(e){
+e.preventDefault();
+alert('Login system is not connected yet. Your details have not been sent or saved.');
+});
+</script>
+</body>
+</html>
