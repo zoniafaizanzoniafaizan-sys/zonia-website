@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #87ceeb;
+  font-family: Arial, sans-serif;
+  touch-action: none;
+}
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#controls {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+#joy {
+  position: absolute;
+  bottom: 35px;
+  left: 25px;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  background: #ffffff35;
+  border: 2px solid #ffffffaa;
+  pointer-events: auto;
+  touch-action: none;
+}
+#stick {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #ffffffcc;
+  border: 2px solid #fff;
+  left: 31px;
+  top: 31px;
+}
+#jump {
+  position: absolute;
+  right: 30px;
+  bottom: 55px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background: #e94b65cc;
+  color: white;
+  font-weight: bold;
+  pointer-events: auto;
+}
+#help {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background: #0007;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+}
